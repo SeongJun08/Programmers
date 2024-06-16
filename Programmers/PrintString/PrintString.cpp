@@ -6,4 +6,5 @@ int main()
     std::cin >> str;
 
     std::cout << str << std::endl;
+    
 }
