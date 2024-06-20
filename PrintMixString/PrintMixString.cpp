@@ -15,3 +15,4 @@ std::string solution(std::string str1, std::string str2) {
 
     return answer;
 }
+
