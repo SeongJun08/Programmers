@@ -1,0 +1,27 @@
+#include <string>
+#include <vector>
+
+int solution(std::vector<int> num_list) 
+{
+    int answer = 0;
+    int multiple = 1;
+    int square = 0;
+    
+    for(int i = 0; i < num_list.size(); i++)
+    {
+        multiple *= num_list[i];
+        square += num_list[i];
+    }
+    
+    square *= square;
+    
+    if(multiple < square)
+    {
+        answer = 1;
+    }
+    else
+    {
+        answer = 0;
+    }
+    return answer;
+}
